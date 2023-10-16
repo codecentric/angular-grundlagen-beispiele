@@ -1,0 +1,8 @@
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+  </div>
+
+  <button type="submit" [disabled]="!myForm.valid">Speichern</button>
+</form>
