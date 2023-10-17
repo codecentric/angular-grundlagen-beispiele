@@ -19,6 +19,8 @@ import {counterReducer} from "./store-driven-counter/counter.reducer";
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import {MyInterceptor} from "./interceptors/my-interceptor";
+import {httpInterceptorProviders} from "./interceptors";
 
 @NgModule({
   declarations: [
@@ -49,7 +51,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     StoreModule.forRoot({count: counterReducer}),
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: httpInterceptorProviders,
   bootstrap: [AppComponent]
 })
 export class AppModule {
