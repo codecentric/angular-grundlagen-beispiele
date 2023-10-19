@@ -12,6 +12,7 @@ export class MakechoiceComponent {
 
   setChoiceToYES() {
     this.choiceMade.emit('YES') ;
+
   }
 
   setChoiceToNO() {

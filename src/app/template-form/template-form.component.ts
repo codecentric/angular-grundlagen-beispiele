@@ -3,10 +3,10 @@ import { FormsModule } from "@angular/forms";
 
 @Component({
   selector: 'app-simple-form',
-  templateUrl: './simple-form.component.html',
-  styleUrls: ['./simple-form.component.css']
+  templateUrl: './template-form.component.html',
+  styleUrls: ['./template-form.component.css']
 })
-export class SimpleFormComponent {
+export class TemplateFormComponent {
 
   formData = {
     name: ''

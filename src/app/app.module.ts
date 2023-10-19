@@ -2,25 +2,25 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
-import {MytextfieldComponent} from './mytextfield/mytextfield.component';
-import {MakechoiceComponent} from './makechoice/makechoice.component';
+import {MytextfieldComponent} from './property-binding/mytextfield.component';
+import {MakechoiceComponent} from './event-binding/makechoice.component';
 import {MakegreenDirective} from './shared/makegreen.directive';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
-import {ShowUsersComponent} from './show-users/show-users.component';
+import {ShowUsersComponent} from './service-call/show-users.component';
 import {RouterOutlet} from "@angular/router";
-import {CountToTenComponent} from './count-to-ten/count-to-ten.component';
+import {CountToTenComponent} from './structural-directive/count-to-ten.component';
 import {AppRoutingModule} from "./app-routing.module";
-import { ParentChoiceComponent } from './parent-choice/parent-choice.component';
-import { StoreDrivenCounterComponent } from './store-driven-counter/store-driven-counter.component';
+import { ParentChoiceComponent } from './parent-component/parent-choice.component';
+import { StoreDrivenCounterComponent } from './ngrx-store/store-driven-counter.component';
 import {StoreModule} from "@ngrx/store";
-import {counterReducer} from "./store-driven-counter/counter.reducer";
-import { SimpleFormComponent } from './simple-form/simple-form.component';
+import {counterReducer} from "./ngrx-store/counter.reducer";
+import { TemplateFormComponent } from './template-form/template-form.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
-import {MyInterceptor} from "./interceptors/my-interceptor";
 import {httpInterceptorProviders} from "./interceptors";
+import { PageNotFoundComponent } from './routing/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +32,9 @@ import {httpInterceptorProviders} from "./interceptors";
     CountToTenComponent,
     ParentChoiceComponent,
     StoreDrivenCounterComponent,
-    SimpleFormComponent,
-    ReactiveFormComponent
+    TemplateFormComponent,
+    ReactiveFormComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
