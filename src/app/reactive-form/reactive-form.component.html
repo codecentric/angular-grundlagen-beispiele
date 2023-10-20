@@ -1,8 +1,12 @@
 <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
   <div class="form-group">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" formControlName="name">
+    <label for="vorname">Vorname:</label>
+    <input type="text" id="vorname" name="vorname" formControlName="vorname">
+    <label for="nachname">Nachname:</label>
+    <input type="text" id="nachname" name="nachname" formControlName="nachname">
+
   </div>
+      <app-nested-adress-form [parentForm]="myForm"></app-nested-adress-form>
 
   <button type="submit" [disabled]="!myForm.valid">Speichern</button>
 </form>

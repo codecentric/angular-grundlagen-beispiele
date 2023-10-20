@@ -21,6 +21,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import {httpInterceptorProviders} from "./interceptors";
 import { PageNotFoundComponent } from './routing/page-not-found/page-not-found.component';
+import { NestedAdressFormComponent } from './nested-adress-form/nested-adress-form.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { PageNotFoundComponent } from './routing/page-not-found/page-not-found.c
     TemplateFormComponent,
     ReactiveFormComponent,
     PageNotFoundComponent,
+    NestedAdressFormComponent,
   ],
   imports: [
     BrowserModule,

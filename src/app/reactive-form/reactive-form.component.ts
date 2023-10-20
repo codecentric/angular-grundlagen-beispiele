@@ -19,7 +19,8 @@ export class ReactiveFormComponent {
 
   constructor(private formBuilder: FormBuilder) {
     this.myForm = this.formBuilder.group({
-      name: ['', [Validators.required, containsThreeValidator]]
+      vorname: ['', [Validators.required, containsThreeValidator]],
+      nachname: ['', [Validators.required, containsThreeValidator]]
     });
   }
 
