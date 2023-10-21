@@ -1,1 +1,6 @@
-<p>usethirdpartylibforstyling works!</p>
+<!-- use bootstrap library as an example https://ng-bootstrap.github.io/#/getting-started
+use css classes like .bg-primary or ready to use componenents like ngb-timepicker-->
+<p class=".bg-primary">This time for Styling Bootstrap is used</p>
+<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+<hr />
+<pre>Selected time: {{time | json}}</pre>

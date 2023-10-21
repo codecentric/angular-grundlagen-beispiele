@@ -24,6 +24,7 @@ import { PageNotFoundComponent } from './routing/page-not-found/page-not-found.c
 import { NestedAdressFormComponent } from './nested-adress-form/nested-adress-form.component';
 import { DoityourselfstylingComponent } from './doityourselfstyling/doityourselfstyling.component';
 import { UsethirdpartylibforstylingComponent } from './usethirdpartylibforstyling/usethirdpartylibforstyling.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { UsethirdpartylibforstylingComponent } from './usethirdpartylibforstylin
     AppRoutingModule,
     FormsModule,
     StoreModule.forRoot({count: counterReducer}),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: httpInterceptorProviders,
   bootstrap: [AppComponent]

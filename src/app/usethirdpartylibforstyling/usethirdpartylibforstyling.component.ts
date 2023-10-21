@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./usethirdpartylibforstyling.component.css']
 })
 export class UsethirdpartylibforstylingComponent {
-
+  time = { hour: 13, minute: 30 };
 }
