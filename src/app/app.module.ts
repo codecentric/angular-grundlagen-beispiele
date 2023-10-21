@@ -22,6 +22,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import {httpInterceptorProviders} from "./interceptors";
 import { PageNotFoundComponent } from './routing/page-not-found/page-not-found.component';
 import { NestedAdressFormComponent } from './nested-adress-form/nested-adress-form.component';
+import { DoityourselfstylingComponent } from './doityourselfstyling/doityourselfstyling.component';
+import { UsethirdpartylibforstylingComponent } from './usethirdpartylibforstyling/usethirdpartylibforstyling.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { NestedAdressFormComponent } from './nested-adress-form/nested-adress-fo
     ReactiveFormComponent,
     PageNotFoundComponent,
     NestedAdressFormComponent,
+    DoityourselfstylingComponent,
+    UsethirdpartylibforstylingComponent,
   ],
   imports: [
     BrowserModule,

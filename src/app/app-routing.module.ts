@@ -7,6 +7,8 @@ import {StoreDrivenCounterComponent} from "./ngrx-store/store-driven-counter.com
 import {TemplateFormComponent} from "./template-form/template-form.component";
 import {ReactiveFormComponent} from "./reactive-form/reactive-form.component";
 import {PageNotFoundComponent} from "./routing/page-not-found/page-not-found.component";
+import {DoityourselfstylingComponent} from "./doityourselfstyling/doityourselfstyling.component";
+import {UsethirdpartylibforstylingComponent} from "./usethirdpartylibforstyling/usethirdpartylibforstyling.component";
 
 
 export const authGuard: CanActivateFn = (route, state)=>{
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path: 'count', component: CountToTenComponent, canActivate: [authGuard] },
   { path: 'simpleform', component: TemplateFormComponent },
   { path: 'reactiveform', component: ReactiveFormComponent },
+  { path: 'selfstyling', component: DoityourselfstylingComponent },
+  { path: 'thirdpartystyling', component: UsethirdpartylibforstylingComponent },
   {path: 'child', loadChildren: () => import('./child-module/child-module.module').then(mod => mod.ChildModuleModule)},
   { path: '', component: ParentChoiceComponent },
   { path: '**', component: PageNotFoundComponent}
